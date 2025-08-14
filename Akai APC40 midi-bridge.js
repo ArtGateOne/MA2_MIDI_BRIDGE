@@ -1,3 +1,5 @@
+//#Akai APC40 bridge - by ArtgateOne ver.1.0 
+
 const easymidi = require("easymidi");
 
 // 🎚 Configuration
