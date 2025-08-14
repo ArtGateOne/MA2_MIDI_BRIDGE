@@ -1,5 +1,18 @@
 # MA2 MIDI BRIDGE
 
+Software that automatically translates MIDI CC messages into NOTE messages understandable by MA.
+
+
+
+Available versions for devices:
+
+Akai APC40 (original version – not MK2)
+
+
+------------
+
+
+
 
 To run the code, you will need to have Node.js installed, specifically version 14.17.0, which this package was prepared for.
 
