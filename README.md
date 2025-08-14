@@ -3,9 +3,14 @@
 
 To run the code, you will need to have Node.js installed, specifically version 14.17.0, which this package was prepared for.
 
+
+
+
 How to run:
 
 Download and install Node.js 14.17.0 from this link --> https://nodejs.org/dist/v14.17.0/node-v14.17.0-x64.msi
+
+
 
 Requirements
 
@@ -13,11 +18,14 @@ Node.js version 14.17
 
 LoopMIDI (Windows MIDI loopback driver)
 
+
+
 Installation & Setup
 
 Download the archive and extract it to a folder of your choice.
 
 Download Node.js (v14.17) from the official website and install it. Download and install Node.js 14.17.0 from this link --> https://nodejs.org/dist/v14.17.0/node-v14.17.0-x64.msi
+
 
 Navigate to the folder with the extracted files.
 
@@ -34,18 +42,17 @@ Akai APC40
 
 --------------------------------------
 
-#Akai APC40
+Akai APC40 LoopMIDI Configuration
 
-LoopMIDI Configuration
 
-In LoopMIDI, add a new virtual MIDI device named:
-
-Akai APC40 Virtual
+In LoopMIDI, add a new virtual MIDI device named: Akai APC40 Virtual
 
 
 Connect the Akai device.
 
 Ensure it is not being used by another application (especially as MIDI input).
+
+
 
 Running the Script
 
@@ -53,10 +60,11 @@ Start my script by double-clicking the Akai APC40 midi-bridge icon.
 
 In the terminal, you should see a message confirming the MIDI connection.
 
+
+
 Open MA2 or Dot2 and in the MIDI settings, set MIDI IN to:
 
 Akai APC40 Virtual
-
 
 
 
