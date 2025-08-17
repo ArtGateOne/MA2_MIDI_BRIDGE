@@ -1,4 +1,4 @@
-//#Akai APC40 bridge - by ArtgateOne ver.1.0 
+//#Akai APC40 bridge - by ArtgateOne ver.1.1 
 
 const easymidi = require("easymidi");
 
@@ -127,7 +127,7 @@ input.on("cc", (msg) => {
     const baseNote = (controller - 16) * 2 + 24;
     const noteCCW = baseNote;
     const noteCW = baseNote + 1;
-    const isCCW = value <= prevValue || value === 0;
+    const isCCW = value < prevValue || (value === 0 && prevValue === 0);
     const direction = isCCW ? "CCW" : "CW";
 
     const noteOn = isCCW ? noteCCW : noteCW;
@@ -178,7 +178,7 @@ input.on("cc", (msg) => {
     const baseNote = (controller - 48) * 2 + 66;
     const noteCCW = baseNote;
     const noteCW = baseNote + 1;
-    const isCCW = value <= prevValue || value === 0;
+    const isCCW = value < prevValue || (value === 0 && prevValue === 0);
     const direction = isCCW ? "CCW" : "CW";
 
     const noteOn = isCCW ? noteCCW : noteCW;
