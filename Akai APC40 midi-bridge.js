@@ -1,4 +1,4 @@
-//#Akai APC40 bridge - by ArtgateOne ver.1.1 
+//#Akai APC40 bridge - by ArtgateOne ver.1.2 
 
 const easymidi = require("easymidi");
 
@@ -213,3 +213,29 @@ input.on("cc", (msg) => {
     );
   }
 });
+
+
+process.on("SIGINT", () => {
+  console.log("CTRL+C -> awaryjne wyjście");
+  input.close();
+  process.exit(1); // kod błędu
+});
+
+process.on("SIGHUP", () => {
+  console.log("CTRL+C -> awaryjne wyjście");
+  input.close();
+  process.exit(1); // kod błędu
+});
+
+process.on("SIGTERM", () => {
+  console.log("CTRL+C -> awaryjne wyjście");
+  input.close();
+  process.exit(1); // kod błędu
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('Nieobsłużony wyjątek:', err.message);
+  // Możesz tu np. spróbować ponownie połączyć z kontrolerem
+});
+
+
