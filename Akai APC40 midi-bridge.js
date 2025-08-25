@@ -6,7 +6,7 @@ const easymidi = require("easymidi");
 const inputName = "Akai APC40";
 const outputName = "Akai APC40 Virtual";
 const debug = true;
-const sysex = false;
+const sysex = true;
 
 // 🔍 Check available MIDI devices
 const inputs = easymidi.getInputs();
